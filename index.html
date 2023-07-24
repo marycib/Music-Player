@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Music Player </title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="player">
+
+            <div class="playerControls">
+                <button class="playerBtn playSmallBtn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+                <h5 class="playerTitle">PLAYING NOW</h5>
+
+                <button class="playerBtn playSmallBtn">
+                    <i class="fa-duotone fa-bars"></i>
+                </button>
+
+               
+            </div>
+ <!-- Cover -->
+                <div class="playerAlbum">
+                    <img src="./imagen/butterfly.jpeg" alt="butterfly" id="cover" class="playerImg">
+                </div>
+
+                <div class="song-timer">
+                    <span class="current-time">0:00</span>
+                    <span class="max-duration">0:00</span>
+                  </div>
+                <!-- Audio HTML Media elememt -->
+                <audio class="playerAudio" src="" id="audio"></audio>
+             <!-- Progress bar -->
+            <div class="progress">
+                <div class="current"></div>
+                <div class="total"></div>
+            </div>
+            <div class="volume">
+                <input type="range" min="0" max="100" value="50">
+            </div>
+<!-- Controls -->
+        <div class="playerControls">
+            <div class="playerBtn player__btn--medium" id="backward">
+              <i class="fas fa-backward"></i>
+            </div>
+     
+            <div class="playerBtn player__btn--medium blue play" id="play">
+              <i class="fas fa-play play-btn"></i>
+              <i class="fas fa-pause pause-btn hide"></i>
+            </div>
+     
+            <div class="playerBtn player__btn--medium" id="forward">
+              <i class="fas fa-forward"></i>
+            </div>
+
+        </div>
+                    <!-- Song list -->
+        <ul class="songs" id="songs">
+            <!-- <li><a href="#">Song 1</a></li>
+            <li><a class="active" href="#">Song 2</a></li>
+            <li><a href="#">Song 3</a></li> -->
+        </ul>
+    </div>
+
+
+</body>
+
+</html>

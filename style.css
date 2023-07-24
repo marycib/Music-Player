@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+
+:root {
+  --background: #e0e5ec;
+  --gray: #797d7f;
+  --lightblack: #515C6F;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
+.player {
+  width: 300px;
+  height: 550px;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+
+}
+
+.playerControls {
+  display: flex;
+  width: 95%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+
+.playerBtn {
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+    8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+  color: var(--gray);
+  border: 1px solid #d0d0d0;
+  opacity: 0.5;
+}
+
+.playerBtn:active {
+  box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9,
+    inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
+}
+
+
+.playSmallBtn {
+  min-width: 50px;
+  min-height: 50px;
+}
+
+
+.playerTitle {
+  font-weight: 600;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  margin: 0;
+
+
+}
+
+.playerAlbum {
+  width: 150px;
+}
+
+
+.song-timer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 60%;
+}
+
+.song-timer span{
+  width: 78%;
+  font-size: 18px;
+  font-weight: 600;
+  color: #a1a1a1;
+  letter-spacing: 1px;
+    
+}
+
+
+
+.playerImg {
+  border-radius: 50%;
+  box-shadow: 2px 2px 7px rgb(163, 177, 198), -2px -2px 7px rgb(163, 177, 198),
+    -8px -8px 50px rgba(255, 255, 255, 0.8), 3px 3px 25px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+.player__btn--medium {
+  min-height: 70px;
+  min-width: 70px;
+  margin-top: 50px;
+}
+
+.playerAudio {
+  visibility: hidden;
+}
+
+
+.blue {
+  background-color: #0c49f0;
+  color: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+
+.songs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1em;
+  opacity: 0.5;
+  
+}
+
+
+.songs li {
+  margin-bottom: 1rem;
+}
+
+.songs a {
+  color: rgb(14, 13, 13);
+  text-decoration: none;
+}
+
+.songs a.active {
+  color: rgb(58, 17, 124);
+  font-weight: bold;
+}
